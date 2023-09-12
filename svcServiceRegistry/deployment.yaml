@@ -23,7 +23,7 @@ spec:
       containers:
       - name: svc-service-registry
         imagePullPolicy: Always
-        image: image-registry.openshift-image-registry.svc:5000/spring-petclinic/web_registry_image:latest
+        image: image-registry.openshift-image-registry.svc:5000/common-service/web_registry_image:latest
         ports:
         - containerPort: 8582
           protocol: TCP
