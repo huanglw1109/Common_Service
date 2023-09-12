@@ -3,26 +3,26 @@ kind: Deployment
 metadata:
   annotations:
   labels:
-    app: svc-service-registry
+    app: web-service-registry
     app.kubernetes.io/component: web
     app.kubernetes.io/instance: service-registry
     app.kubernetes.io/name: service-registry
     app.openshift.io/runtime: java
-  name: svc-service-registry
+  name: web-service-registry
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: svc-service-registry
+      app: web-service-registry
   template:
     metadata:
       labels:
-        app: svc-service-registry
+        app: web-service-registry
     spec:
       containers:
-      - name: svc-service-registry
+      - name: web-service-registry
         imagePullPolicy: Always
-        image: image-registry.openshift-image-registry.svc:5000/common-service/registry:20230912-1
+        image: image-registry.openshift-image-registry.svc:5000/common-service/web_registry_image:20230912-1
         ports:
-        - containerPort: 8581
+        - containerPort: 8582
           protocol: TCP

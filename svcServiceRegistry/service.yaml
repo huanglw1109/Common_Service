@@ -6,10 +6,10 @@ metadata:
   name: svc-service-registry
 spec:
   ports:
-  - name: 8582-tcp
-    port: 8582
+  - name: 8581-tcp
+    port: 8581
     protocol: TCP
-    targetPort: 8582
+    targetPort: 8581
   selector:
     app: svc-service-registry
   sessionAffinity: None
