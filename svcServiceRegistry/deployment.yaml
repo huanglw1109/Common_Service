@@ -22,7 +22,7 @@ spec:
       containers:
       - name: svc-service-registry
         imagePullPolicy: Always
-        image: image-registry.openshift-image-registry.svc:5000/common-service/registry:20230912-1
+        image: image-registry.openshift-image-registry.svc:5000/common-service/registry:0aa562feb3a5b68bd546295af1d83fc5afbce30d
         ports:
         - containerPort: 8581
           protocol: TCP
