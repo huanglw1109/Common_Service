@@ -22,7 +22,7 @@ spec:
       containers:
       - name: web-service-registry
         imagePullPolicy: Always
-        image: image-registry.openshift-image-registry.svc:5000/common-service/web_registry_image:d77fb1dad3eda16fe0245306ed11ed8636c9966d
+        image: image-registry.openshift-image-registry.svc:5000/common-service/pgp:c03f797704e02f66bff6bd202f05af70ff0bfc6c
         ports:
         - containerPort: 8582
           protocol: TCP
