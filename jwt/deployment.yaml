@@ -22,7 +22,7 @@ spec:
       containers:
       - name: jwt
         imagePullPolicy: Always
-        image: image-registry.openshift-image-registry.svc:5000/common-service/jwt:25f52d3e2db1ddd0e12f71f0e1002306d2d0fb8f
+        image: image-registry.openshift-image-registry.svc:5000/common-service/jwt:26571bc94f6ca20f42085731e89131f3d4dc36ca
         ports:
         - containerPort: 8481
           protocol: TCP
